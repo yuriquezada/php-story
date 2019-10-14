@@ -4,7 +4,7 @@ session_start(); //Inicializar la session
 $a=$_POST['user']; 
 $b=$_POST['password']; 
 //condicion para las preguntas
-if($a=="php" and $b=="2019")
+if($a=="yuri" and $b=="programacionweb")
 { 
    $_SESSION['acceso']='ok'; 
    $_SESSION['usuario']=$a; 

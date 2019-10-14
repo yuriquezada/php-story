@@ -1,10 +1,13 @@
 <?php include("includes/header.php")?>
-<h3>Detalle de compra</h3>
+<header class="text-center mt-5">
+  <h3>Detalle de compra</h3>
+</header>
 <div class="container pt-5 ">
   <div class="row">
     <div class="col-8 m-auto bg-warning">
       <?php
       if(isset($_POST['submit2'])){
+        
          $quantity1=$_POST['quantity1'];
          $quantity2=$_POST['quantity2'];
          $quantity3=$_POST['quantity3'];
@@ -29,9 +32,9 @@
         <thead class="thead-dark">
           <tr>
             <th scope="col">#</th>
-            <th scope="col">Description</th>
-            <th scope="col">Price (x kg)</th>
-            <th scope="col">Quantity</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Precio (x kg)</th>
+            <th scope="col">Cantidad</th>
             <th scope="col">Subtotal</th>
           </tr>
         </thead>
@@ -74,9 +77,9 @@
         </tbody>
         <tbody class="aaaaa">
           <tr>
-          <td></td>
-          <td></td>
-          <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <th scope="row">TOTAL</th>
             <td><?php echo $subtotal1+$subtotal2+$subtotal3+$subtotal4+$subtotal5 ?></td>
           </tr>
